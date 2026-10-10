@@ -1,0 +1,166 @@
+:root {
+  --primary: #2457a7;
+  --primary-dark: #183d78;
+  --background: #ffffff;
+  --surface: #f2f6fc;
+  --text: #1c2734;
+  --muted: #5d6a78;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #dde5ef;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+.logo {
+  color: var(--primary-dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  padding: 110px 0;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 8px 0 20px;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.08;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 680px;
+  font-size: 1.15rem;
+}
+
+.eyebrow {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 22px;
+  color: var(--primary-dark);
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section h2,
+.site-footer h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.section-muted {
+  background: var(--surface);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 28px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgb(24 61 120 / 8%);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--primary-dark);
+}
+
+.site-footer {
+  padding: 48px 0;
+  color: #fff;
+  background: #172434;
+}
+
+.site-footer p {
+  margin: 6px 0;
+  color: #d6e0eb;
+}
+
+@media (max-width: 650px) {
+  .header-content {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
