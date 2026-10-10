@@ -1,66 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Официальный сайт школы">
-  <title>Наша школа</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Официальный сайт государственного учреждения образования «Ольховская средняя школа»">
+  <title>Ольховская средняя школа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-content">
-      <a class="logo" href="#">Наша школа</a>
-      <nav aria-label="Основная навигация">
-        <ul class="nav-list">
-          <li><a href="#about">О школе</a></li>
-          <li><a href="#news">Новости</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-      </nav>
+<body id="top">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <time id="current-date" datetime="">Сегодня</time>
+      <span class="language" aria-label="Язык страницы: русский">РУС</span>
     </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container school-heading">
+      <div class="emblem" aria-label="Эмблема Ольховской средней школы" role="img">
+        <span>ОШ</span>
+      </div>
+      <div class="school-heading__text">
+        <p>Министерство образования Республики Беларусь</p>
+        <p>Отдел образования Островецкого райисполкома</p>
+        <p>Государственное учреждение образования</p>
+        <h1>Ольховская средняя школа</h1>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+      <div class="container">
+        <ul class="main-nav__list">
+          <li><a class="is-active" href="#top" aria-current="page">Главная</a></li>
+          <li><a href="#one-window">Одно окно</a></li>
+          <li><a href="#about">Об учреждении</a></li>
+          <li><a href="#students">Обучающимся</a></li>
+          <li><a href="#parents">Родителям</a></li>
+          <li><a href="#news">Жизнь учреждения</a></li>
+          <li><a href="#kindergarten">Детский сад</a></li>
+          <li><a href="#services">Сервисы</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Добро пожаловать</p>
-        <h1>Школа, в которой интересно учиться</h1>
-        <p>Мы помогаем ученикам раскрывать способности, получать знания и уверенно смотреть в будущее.</p>
-        <a class="button" href="#about">Узнать больше</a>
-      </div>
-    </section>
+  <main class="container page-content">
+    <figure class="school-banner">
+      <img src="images/school-banner-placeholder.svg" alt="Место для праздничного баннера Ольховской средней школы" width="1462" height="460">
+      <figcaption>Иллюстрация-заготовка. Замените её одобренным школьным баннером.</figcaption>
+    </figure>
 
-    <section class="section" id="about">
-      <div class="container">
-        <h2>О нашей школе</h2>
-        <p>Здесь можно рассказать об истории школы, её педагогах, образовательных программах и достижениях учеников.</p>
-      </div>
-    </section>
+    <div class="content-grid">
+      <div class="content-main">
+        <section class="panel welcome" id="about">
+          <p class="section-label">Добро пожаловать</p>
+          <h2>Ольховская средняя школа</h2>
+          <p class="lead">Мы рады приветствовать вас на сайте нашего учреждения образования.</p>
+          <p>Здесь будет размещена информация об истории школы, образовательном процессе, педагогическом коллективе, достижениях и важных событиях. Тексты на этой странице являются заготовками и будут дополнены после утверждения официальных материалов.</p>
+        </section>
 
-    <section class="section section-muted" id="news">
-      <div class="container">
-        <h2>Последние новости</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Начало учебного года</h3>
-            <p>Поздравляем учеников, родителей и учителей с новым учебным годом!</p>
-          </article>
-          <article class="card">
-            <h3>Школьные мероприятия</h3>
-            <p>Следите за расписанием ближайших олимпиад, концертов и спортивных соревнований.</p>
-          </article>
-        </div>
+        <section class="panel" id="news">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Жизнь учреждения</p>
+              <h2>Новости школы</h2>
+            </div>
+          </div>
+          <div class="news-grid">
+            <article class="news-card">
+              <time datetime="">[добавьте дату]</time>
+              <h3>[Добавьте заголовок новости]</h3>
+              <p>Здесь появится краткое описание школьного события, объявления или достижения.</p>
+            </article>
+            <article class="news-card">
+              <time datetime="">[добавьте дату]</time>
+              <h3>[Добавьте заголовок новости]</h3>
+              <p>Здесь появится краткое описание школьного события, объявления или достижения.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel info-section" id="students">
+          <p class="section-label">Полезная информация</p>
+          <h2>Обучающимся</h2>
+          <div class="link-list">
+            <a href="#students">Расписание занятий <span aria-hidden="true">→</span></a>
+            <a href="#students">Учебные материалы <span aria-hidden="true">→</span></a>
+            <a href="#students">Безопасность и поддержка <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="placeholder-note">[Добавьте актуальные сведения и документы]</p>
+        </section>
+
+        <section class="panel info-section" id="parents">
+          <p class="section-label">Полезная информация</p>
+          <h2>Родителям</h2>
+          <div class="link-list">
+            <a href="#parents">Организация учебного процесса <span aria-hidden="true">→</span></a>
+            <a href="#parents">Родительские собрания <span aria-hidden="true">→</span></a>
+            <a href="#parents">Часто задаваемые вопросы <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="placeholder-note">[Добавьте актуальные сведения и документы]</p>
+        </section>
+      </div>
+
+      <aside class="content-sidebar" aria-label="Дополнительная информация">
+        <section class="panel sidebar-panel" id="one-window">
+          <p class="section-label">Обращения граждан</p>
+          <h2>Одно окно</h2>
+          <p>Информация об административных процедурах, графике приёма и ответственных лицах.</p>
+          <p class="placeholder-note">[Добавьте график и документы]</p>
+        </section>
+
+        <section class="panel sidebar-panel" id="services">
+          <p class="section-label">Быстрый доступ</p>
+          <h2>Сервисы</h2>
+          <ul class="sidebar-links">
+            <li><a href="#services">Электронный дневник</a></li>
+            <li><a href="#services">Образовательные ресурсы</a></li>
+            <li><a href="#services">Полезные ссылки</a></li>
+          </ul>
+          <p class="placeholder-note">[Добавьте действующие ссылки]</p>
+        </section>
+
+        <section class="panel sidebar-panel" id="kindergarten">
+          <p class="section-label">Дошкольное образование</p>
+          <h2>Детский сад</h2>
+          <p>Здесь будет размещена информация о дошкольных группах, режиме дня и занятиях.</p>
+          <p class="placeholder-note">[Добавьте сведения]</p>
+        </section>
+
+        <section class="panel sidebar-panel contacts" id="contacts">
+          <p class="section-label">Связаться с нами</p>
+          <h2>Контакты</h2>
+          <address>
+            <p><strong>Адрес</strong><br>[добавьте адрес]</p>
+            <p><strong>Телефон</strong><br>[добавьте телефон]</p>
+            <p><strong>Электронная почта</strong><br>[добавьте e-mail]</p>
+          </address>
+        </section>
+      </aside>
+    </div>
+
+    <section class="panel gallery" aria-labelledby="gallery-title">
+      <p class="section-label">Школьная жизнь</p>
+      <h2 id="gallery-title">Фотогалерея</h2>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder"><span>Фото 1</span></div>
+        <div class="gallery-placeholder"><span>Фото 2</span></div>
+        <div class="gallery-placeholder"><span>Фото 3</span></div>
+        <div class="gallery-placeholder"><span>Фото 4</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="contacts">
-    <div class="container">
-      <h2>Контакты</h2>
-      <p>Телефон: +7 (000) 000-00-00</p>
-      <p>Электронная почта: school@example.com</p>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="current-year"></span> Ольховская средняя школа</p>
+      <a href="#top">Наверх ↑</a>
     </div>
   </footer>
+
+  <script>
+    const today = new Date();
+    const dateElement = document.querySelector('#current-date');
+    dateElement.dateTime = today.toISOString().slice(0, 10);
+    dateElement.textContent = today.toLocaleDateString('ru-RU', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
+    document.querySelector('#current-year').textContent = today.getFullYear();
+  </script>
 </body>
 </html>
