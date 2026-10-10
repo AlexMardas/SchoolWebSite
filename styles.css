@@ -170,15 +170,8 @@ img {
 
 .school-banner img {
   width: 100%;
-  aspect-ratio: 1462 / 460;
+  aspect-ratio: 3 / 1;
   object-fit: cover;
-}
-
-.school-banner figcaption {
-  padding: 8px 5px 0;
-  color: var(--muted);
-  font-size: 12px;
-  text-align: center;
 }
 
 .content-grid {
