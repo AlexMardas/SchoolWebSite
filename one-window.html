@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
-  <div class="topbar"><div class="container topbar__inner"><time id="current-date" datetime="">Сегодня</time><span class="language" aria-label="Язык страницы: русский">РУС</span></div></div>
+  <div class="topbar"><div class="container topbar__inner"><time id="current-date" datetime="">Сегодня</time><label class="language-selector"><span class="language-selector__label">Язык</span><select aria-label="Выберите язык" onchange="window.location.href=this.value"><option value="one-window.html" selected>Русский</option><option value="one-window-en.html">English</option></select></label></div></div>
   <header class="site-header">
     <div class="container school-heading">
       <div class="emblem" aria-label="Эмблема Ольховской средней школы" role="img"><span>ОШ</span></div>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official website of the Olkhovka Secondary School state educational institution">
+  <title>Olkhovka Secondary School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <time id="current-date" datetime="">Today</time>
+      <label class="language-selector">
+        <span class="language-selector__label">Language</span>
+        <select aria-label="Select language" onchange="window.location.href=this.value">
+          <option value="index.html">Русский</option>
+          <option value="index-en.html" selected>English</option>
+        </select>
+      </label>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container school-heading">
+      <div class="emblem" aria-label="Olkhovka Secondary School emblem" role="img"><span>ОШ</span></div>
+      <div class="school-heading__text">
+        <p>Ministry of Education of the Republic of Belarus</p>
+        <p>Education Department of the Ostrovets District Executive Committee</p>
+        <p>State Educational Institution</p>
+        <h1>Olkhovka Secondary School</h1>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="container"><ul class="main-nav__list">
+        <li><a class="is-active" href="index-en.html" aria-current="page">Home</a></li>
+        <li><a href="one-window-en.html">One-stop service</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#students">Students</a></li>
+        <li><a href="#parents">Parents</a></li>
+        <li><a href="#news">School life</a></li>
+        <li><a href="#kindergarten">Kindergarten</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul></div>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <figure class="school-banner"><img src="images/school.png" alt="The school building, students and teachers at a school ceremony" width="2172" height="724"></figure>
+    <div class="content-grid">
+      <div class="content-main">
+        <section class="panel welcome" id="about">
+          <p class="section-label">Welcome</p>
+          <h2>Olkhovka Secondary School</h2>
+          <p class="lead">We are pleased to welcome you to the website of our educational institution.</p>
+          <p>Here you will find information about the school's history, educational process, teaching staff, achievements and important events. The content on this page is currently a draft and will be expanded once the official materials have been approved.</p>
+        </section>
+        <section class="panel" id="news">
+          <div class="section-heading"><div><p class="section-label">School life</p><h2>School news</h2></div></div>
+          <div class="news-grid">
+            <article class="news-card"><time datetime="">[add date]</time><h3>[Add news title]</h3><p>A short description of a school event, announcement or achievement will appear here.</p></article>
+            <article class="news-card"><time datetime="">[add date]</time><h3>[Add news title]</h3><p>A short description of a school event, announcement or achievement will appear here.</p></article>
+          </div>
+        </section>
+        <section class="panel info-section" id="students">
+          <p class="section-label">Useful information</p><h2>Students</h2>
+          <div class="link-list"><a href="#students">Class schedule <span aria-hidden="true">→</span></a><a href="#students">Learning materials <span aria-hidden="true">→</span></a><a href="#students">Safety and support <span aria-hidden="true">→</span></a></div>
+          <p class="placeholder-note">[Add current information and documents]</p>
+        </section>
+        <section class="panel info-section" id="parents">
+          <p class="section-label">Useful information</p><h2>Parents</h2>
+          <div class="link-list"><a href="#parents">Organisation of the learning process <span aria-hidden="true">→</span></a><a href="#parents">Parent meetings <span aria-hidden="true">→</span></a><a href="#parents">Frequently asked questions <span aria-hidden="true">→</span></a></div>
+          <p class="placeholder-note">[Add current information and documents]</p>
+        </section>
+      </div>
+      <aside class="content-sidebar" aria-label="Additional information">
+        <section class="panel sidebar-panel" id="one-window"><p class="section-label">Public enquiries</p><h2>One-stop service</h2><p>Information about administrative procedures, reception hours and responsible staff.</p><p class="placeholder-note">[Add schedule and documents]</p></section>
+        <section class="panel sidebar-panel" id="services"><p class="section-label">Quick access</p><h2>Services</h2><ul class="sidebar-links"><li><a href="#services">Electronic gradebook</a></li><li><a href="#services">Educational resources</a></li><li><a href="#services">Useful links</a></li></ul><p class="placeholder-note">[Add active links]</p></section>
+        <section class="panel sidebar-panel" id="kindergarten"><p class="section-label">Preschool education</p><h2>Kindergarten</h2><p>Information about preschool groups, daily routines and activities will appear here.</p><p class="placeholder-note">[Add information]</p></section>
+        <section class="panel sidebar-panel contacts" id="contacts"><p class="section-label">Get in touch</p><h2>Contacts</h2><address><p><strong>Address</strong><br>[add address]</p><p><strong>Phone</strong><br>[add phone number]</p><p><strong>Email</strong><br>[add email]</p></address></section>
+      </aside>
+    </div>
+    <section class="panel gallery" aria-labelledby="gallery-title"><p class="section-label">School life</p><h2 id="gallery-title">Photo gallery</h2><div class="gallery-grid"><div class="gallery-placeholder"><span>Photo 1</span></div><div class="gallery-placeholder"><span>Photo 2</span></div><div class="gallery-placeholder"><span>Photo 3</span></div><div class="gallery-placeholder"><span>Photo 4</span></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container site-footer__inner"><p>© <span id="current-year"></span> Olkhovka Secondary School</p><a href="#top">Back to top ↑</a></div></footer>
+  <script>
+    const today = new Date();
+    const dateElement = document.querySelector('#current-date');
+    dateElement.dateTime = today.toISOString().slice(0, 10);
+    dateElement.textContent = today.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    document.querySelector('#current-year').textContent = today.getFullYear();
+  </script>
+</body>
+</html>

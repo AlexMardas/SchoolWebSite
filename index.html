@@ -14,7 +14,13 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <time id="current-date" datetime="">Сегодня</time>
-      <span class="language" aria-label="Язык страницы: русский">РУС</span>
+      <label class="language-selector">
+        <span class="language-selector__label">Язык</span>
+        <select aria-label="Выберите язык" onchange="window.location.href=this.value">
+          <option value="index.html" selected>Русский</option>
+          <option value="index-en.html">English</option>
+        </select>
+      </label>
     </div>
   </div>
 

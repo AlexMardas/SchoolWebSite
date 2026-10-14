@@ -60,10 +60,33 @@ img {
   text-transform: capitalize;
 }
 
-.language {
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   font-family: var(--heading-font);
   font-weight: 600;
-  letter-spacing: .08em;
+}
+
+.language-selector__label {
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.language-selector select {
+  min-height: 30px;
+  padding: 3px 28px 3px 9px;
+  color: #253746;
+  background: #fff;
+  border: 1px solid rgb(37 55 70 / 28%);
+  border-radius: 2px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.language-selector select:focus-visible {
+  outline: 3px solid rgb(59 135 201 / 45%);
+  outline-offset: 2px;
 }
 
 .site-header {
